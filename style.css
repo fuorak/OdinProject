@@ -2,19 +2,20 @@
 
 #header {
     display: none;
+    visibility: hidden;
 }
 
 #opening {
     background-color: #1f2937;
     color: #f9FAF8;
     align-items:center;
+    width: 100%;
 }
 
 #themeat {
     display: flex;
     width: 60%;
     padding: 25px;
-    color: #1f2937;
 }
 
 #quote {
@@ -22,6 +23,7 @@
     font-size: 24px;
     color: #1f2937;
     font-family: cursive;
+    width: 100%;
 }
 
 #call {
@@ -29,7 +31,21 @@
     color: #f9faf8;
     width: 45%;
     height: 10%;
-    margin: 30px;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+#pics {
+    flex-direction:column;
+    padding:4%;
+    border: 4px blue;
+}
+
+#plead {
+    flex-direction:row;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
 }
 
 * {
