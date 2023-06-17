@@ -1,8 +1,70 @@
 /* index.html */
 
+* {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    width: 100%;
+
+    /*
+    border-color:#f9FAF8;
+    border-style: dotted;
+    */
+}
+
 #header {
+    width: 100%;
+    flex-direction: row;
+    background-color: #1f2937;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+head {
     display: none;
-    visibility: hidden;
+}
+
+title {
+    display: none;
+}
+
+meta {
+    display: none;
+}
+
+link {
+    display: none;
+}
+
+#headbox {
+    width: 100%;
+    flex-direction: row;
+}
+
+#logo {
+    width: 40%;
+    background-color: #1f2937;
+    color: #f9FAF8;
+}
+
+#headfields {
+    width: 60%;
+    background-color: #1f2937;
+    color: #f9FAF8;
+    flex-direction: row;
+}
+
+#headfield {
+    width: 20%;
+    background-color: #1f2937;
+    color: #f9FAF8;
 }
 
 #opening {
@@ -10,12 +72,34 @@
     color: #f9FAF8;
     align-items:center;
     width: 100%;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+h5 {
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #f9FAF8;
 }
 
 #themeat {
     display: flex;
     width: 60%;
-    padding: 25px;
+    padding: 10px;
 }
 
 #quote {
@@ -45,13 +129,5 @@
     flex-direction:row;
     padding-left: 10%;
     padding-right: 10%;
-    width: 100%;
-}
-
-* {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: inline-flex;
-    width: 100%;
+    width: 50%;
 }

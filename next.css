@@ -1,0 +1,51 @@
+/* next.html */
+
+#header {
+    display: none;
+}
+#nice {
+    background-color: #1f2937;
+    color: #f9FAF8;
+}
+
+#heading {
+    flex: 10%;
+}
+
+#buttonsAndPhoto {
+    flex-direction:row;
+    width: 70%;
+    border-radius: 25px;
+}
+
+#buttonGroup {
+    width: 30%;
+    padding: 10%;
+}
+
+#button {
+    background-color: #3882F6;
+    color: #f9faf8;
+    border-radius: 10px;
+    flex-basis: 1rem;
+    margin: 5%;
+}
+
+#photo {
+    width: 50%;
+    margin: 5%;
+}
+
+
+* {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    width: 100%;
+    background-color: #1f2937;
+    /*
+    border-color:#f9FAF8;
+    border-style: dotted;
+    */
+}
