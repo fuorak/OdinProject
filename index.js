@@ -74,7 +74,7 @@ function playRound() {
     }
 }
 
-
+/*
 rockBtn.addEventListener('click', () => {
     playerChoice = "rock";
     playRound();
@@ -89,7 +89,7 @@ scissorBtn.addEventListener('click', () => {
     playerChoice = "scissors";
     playRound();
 });
-
+*/
 btn.addEventListener('click', function (e) {
     e.target.style.background = 'blue';
 });
