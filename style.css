@@ -182,3 +182,20 @@ a {
     padding-right: 10%;
     width: 50%;
 }
+
+#rpsContainer {
+    flex-direction: column;
+}
+
+#rpsBox {
+    flex-direction: row;
+    width: 90%;
+}
+
+#choiceBox {
+    width: 30%;
+}
+
+#resultBox {
+    width: 100%;
+}
