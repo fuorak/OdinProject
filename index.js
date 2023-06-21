@@ -20,7 +20,7 @@ function playerSelect(selection) {
 }
 
 function comSelect() {
-    comChoice = Math.floor(Math.random()) * (3 - 1) + 1;
+    comChoice = Math.floor(Math.random() * 3) + 1;
 
     if (comChoice == 1) {
         comChoice = "rock";
@@ -68,8 +68,12 @@ function playRound(selection) {
 
     if (playerScore == 5) {
         resultContent.innerHTML = "You Win!";
+        playerScore = 0;
+        comScore = 0;
     } else if (comScore == 5) {
         resultContent.innerHTML = "COM Wins!";
+        playerScore = 0;
+        comScore = 0;
     } else {
         resultContent.innerHTML = "Player used " + playerChoice + ", COM used " + comChoice + "    Scores:  Player: " + playerScore + " COM: " + comScore;
     }
