@@ -79,15 +79,6 @@ function playRound(selection) {
     }
 }
 
-function makeThingsFall() {
-    const fallingElements = document.querySelectorAll('.falling-element');
-
-    fallingElements.forEach((element, index) => {
-        const delay = index * 300; // Delay each element's animation for a staggered effect
-        element.style.animationDelay = `${delay}ms`;
-    });
-}
-
 /*
 rockBtn.addEventListener("click", () => {
     playerChoice = "rock";
