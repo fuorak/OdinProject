@@ -20,7 +20,7 @@ function playerSelect(selection) {
 }
 
 function comSelect() {
-    comChoice = Math.random() * (3 - 1) + 1;
+    comChoice = Math.floor(Math.random()) * (3 - 1) + 1;
 
     if (comChoice == 1) {
         comChoice = "rock";
