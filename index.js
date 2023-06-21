@@ -9,8 +9,7 @@ const rockBtn = document.querySelector('#rock');
 const paperBtn = document.querySelector('#paper');
 const scissorBtn = document.querySelector('#scissors');
 
-const rpsBox = document.querySelector("rpsContainer");
-const resultContent = rpsBox.querySelector("resultBox");
+const resultContent = document.querySelector("#resultBox");
 
 function alertFunction() {
     alert("This is a test");
@@ -23,11 +22,11 @@ function playerSelect(selection) {
 function comSelect() {
     comChoice = Math.random() * (3 - 1) + 1;
 
-    if (comChoice = 1) {
+    if (comChoice == 1) {
         comChoice = "rock";
-    } else if (comChoice = 2) {
+    } else if (comChoice == 2) {
         comChoice = "paper";
-    } else if (comChoice = 3) {
+    } else if (comChoice == 3) {
         comChoice = "scissors";
     }
 }
@@ -36,40 +35,40 @@ function playRound(selection) {
     playerSelect(selection);
     comSelect();
 
-    if (playerChoice = "rock") {
+    if (playerChoice == "rock") {
 
-        if (comChoice = "rock") {
+        if (comChoice == "rock") {
             /* draw */
-        } else if (comChoice = "paper") {
+        } else if (comChoice == "paper") {
             comScore = comScore + 1;
-        } else if (comChoice = "scissors") {
+        } else if (comChoice == "scissors") {
             playerScore = playerScore + 1;
         }
 
-    } else if (playerChoice = "paper") {
+    } else if (playerChoice == "paper") {
 
-        if (comChoice = "rock") {
+        if (comChoice == "rock") {
             playerScore = playerScore + 1;
-        } else if (comChoice = "paper") {
+        } else if (comChoice == "paper") {
             /* draw */
-        } else if (comChoice = "scissors") {
+        } else if (comChoice == "scissors") {
             comScore = comScore + 1;
         }
 
-    } else if (playerChoice = "scissors") {
+    } else if (playerChoice == "scissors") {
 
-        if (comChoice = "rock") {
+        if (comChoice == "rock") {
             comScore = comScore + 1;
-        } else if (comChoice = "paper") {
+        } else if (comChoice == "paper") {
             playerScore = playerScore + 1;
-        } else if (comChoice = "scissors") {
+        } else if (comChoice == "scissors") {
             /* draw */
         }
     }
 
-    if (playerScore = 5) {
+    if (playerScore == 5) {
         resultContent.innerHTML = "You Win!";
-    } else if (comScore = 5) {
+    } else if (comScore == 5) {
         resultContent.innerHTML = "COM Wins!";
     } else {
         resultContent.innerHTML = "Player: " + playerScore + " COM: " + comScore;
