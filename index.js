@@ -74,7 +74,7 @@ function playRound() {
     }
 }
 
-
+/*
 rockBtn.addEventListener("click", () => {
     playerChoice = "rock";
     playRound();
@@ -89,7 +89,15 @@ scissorBtn.addEventListener("click", () => {
     playerChoice = "scissors";
     playRound();
 });
+*/
 
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+});
 
 
 
