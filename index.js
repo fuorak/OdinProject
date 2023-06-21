@@ -74,22 +74,25 @@ function playRound() {
     }
 }
 
-/*
-rockBtn.addEventListener('click', () => {
+
+rockBtn.addEventListener("click", () => {
     playerChoice = "rock";
     playRound();
 });
 
-paperBtn.addEventListener('click', () => {
+paperBtn.addEventListener("click", () => {
     playerChoice = "paper";
     playRound();
 });
 
-scissorBtn.addEventListener('click', () => {
+scissorBtn.addEventListener("click", () => {
     playerChoice = "scissors";
     playRound();
 });
-*/
+
+
+
+
 btn.addEventListener('click', function (e) {
     e.target.style.background = 'blue';
 });
