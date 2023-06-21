@@ -33,7 +33,7 @@ function comSelect() {
 
 function playRound(selection) {
     playerSelect(selection);
-    comChoice();
+    comSelect();
 
     if (playerChoice = "rock") {
 
@@ -67,11 +67,11 @@ function playRound(selection) {
     }
 
     if (playerScore = 5) {
-        resultContent.textContent = "You Win!";
+        resultContent.innerHTML = "You Win!";
     } else if (comScore = 5) {
-        resultContent.textContent = "COM Wins!";
+        resultContent.innerHTML = "COM Wins!";
     } else {
-        resultContent.textContent = "Player: " + playerScore + " COM: " + comScore;
+        resultContent.innerHTML = "Player: " + playerScore + " COM: " + comScore;
     }
 }
 
