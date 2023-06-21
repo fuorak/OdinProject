@@ -31,7 +31,8 @@ function comSelect() {
     }
 }
 
-function playRound() {
+function playRound(selection) {
+    playerSelect(selection);
     comChoice();
 
     if (playerChoice = "rock") {
@@ -95,6 +96,6 @@ const buttons = document.querySelectorAll('button');
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
-        alert(button.id);
+        playRound(button.id);
     });
 });
