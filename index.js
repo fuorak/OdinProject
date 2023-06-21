@@ -9,7 +9,8 @@ const rockBtn = document.querySelector('#rock');
 const paperBtn = document.querySelector('#paper');
 const scissorBtn = document.querySelector('#scissors');
 
-const resultContent = document.querySelector("resultBox");
+const rpsBox = document.querySelector("rpsContainer");
+const resultContent = rpsBox.querySelector("resultBox");
 
 function alertFunction() {
     alert("This is a test");
