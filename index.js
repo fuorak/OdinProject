@@ -74,19 +74,20 @@ function playRound() {
     }
 }
 
+
 rockBtn.addEventListener('click', () => {
     playerChoice = "rock";
-    playRound()
+    playRound();
 });
 
 paperBtn.addEventListener('click', () => {
     playerChoice = "paper";
-    playRound()
+    playRound();
 });
 
 scissorBtn.addEventListener('click', () => {
     playerChoice = "scissors";
-    playRound()
+    playRound();
 });
 
 btn.addEventListener('click', function (e) {
