@@ -71,7 +71,7 @@ function playRound(selection) {
     } else if (comScore == 5) {
         resultContent.innerHTML = "COM Wins!";
     } else {
-        resultContent.innerHTML = "Player: " + playerScore + " COM: " + comScore;
+        resultContent.innerHTML = "Player used " + playerChoice + ", COM used " + comChoice + "    Scores:  Player: " + playerScore + " COM: " + comScore;
     }
 }
 
